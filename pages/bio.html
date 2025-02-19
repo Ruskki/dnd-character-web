@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <head>
+    <title>DnD Character Sheet</title>
+    <link rel="stylesheet" href="../style/style.css"/>
+    
+  </head>
+<body id="bio-page">
+  <nav class="flex-row flex-align nav-bar">
+    <a class="main-option" href="../pages/bio.html"></a><b>Bio</b></a>
+    <a class="main-option" href="../pages/stats_spells.html">Stats & Spells</a>
+  </nav>
+  <div class="flex-row bio-container flex-justify">
+    <div class="flex-align flex-col character-profile-container">
+      <!-- CHARACTER ART -->
+      <div class="flex-col">
+        <p>Duncan</p>
+        <img src="../assets/duncan_fullbody.png" height="500px" width="200px"/>
+      </div>
+      <!-- EXP & LVL -->
+      <div class="important-info-grid">
+        <div>Total EXP</div>
+        <div>LVL</div>
+        <div>Available EXP</div>
+        <div>
+          <input type="text" id="total-exp-input">
+        </div>
+        <div>
+          <input type="text" id="lvl-input">
+        </div>
+        <div>
+          <input type="text" id="exp-input">
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- GENERAL INFO -->
+      <div>
+        <p>General Info</p>
+        <div class="general-info-grid">
+          <div>Race</div>
+          <div>Human</div>
+          <div>Age</div>
+          <div>23</div>
+          <div>Gender</div>
+          <div>Male</div>
+          <div>Weight</div>
+          <div>60 kg</div>
+          <div>Height</div>
+          <div>1,75 cm</div>
+          <div>Place of Origin</div>
+          <div>U.S.A</div>
+          <div>Aligned Faction</div>
+          <div>idk lol</div>
+        </div>
+      </div>
+      <!-- KNOWLEDGE INFO -->
+      <div>
+        <p>General Knowledge</p>
+        <div class="knowledge-info-grid">
+          <div>Languages</div>
+          <div>Skills</div>
+          <div>English</div>
+          <div>Industrial Engieneering Degree</div>
+          <div>Common</div>
+          <div>Computer Engieneering Degree</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-align flex-col">
+    <p>Carry Capacity</p>
+    <div class="carry-info-grid">
+      <div><p>Physical</p></div>
+      <div><p>Magical</p></div>
+      <div><p>853 gold</p></div>
+      <div><p>blank</p></div>
+    </div>
+  </div>
+</body>
+
+<script src="../scripts/bio.js"></script>

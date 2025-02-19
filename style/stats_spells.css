@@ -1,0 +1,54 @@
+.stats-grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.spell-basic-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.spell-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.spell-info-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+}
+
+.spell-cast-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 50px;
+}
+
+.spell-grid > *{
+  border: 1px solid black;
+}
+
+.spell-image-container{
+  height: min-content;
+}
+
+.total-stat{
+  display: flex;
+  color: yellow;
+  background-color: rgba(123, 81, 22, 0.688);
+  justify-content: center;
+  font-size: larger;
+}
+
+.stat-title{
+  max-height:min-content;
+}
