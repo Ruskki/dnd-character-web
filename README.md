@@ -1,7 +1,7 @@
 # DnD Character Sheet Template
 This is using a custom system my friend made so beware! 
 
-I added comments in the code to try to make it easier to edit. If you need any help making or changing something make and issue or send me a message
+I added comments in the code to try to make it easier to edit. If you need any help making or changing something make and issue or send me a message (you can find that on my profile).
 
 ## Installation
 ### Experienced Users
