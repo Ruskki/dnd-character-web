@@ -2,14 +2,17 @@
   <head>
     <title>DnD Character Sheet</title>
     <link rel="stylesheet" href="../style/style.css"/>
-    
   </head>
+
 <body id="stats-spells-page">
+  <!-- NAV BAR -->
   <nav class="flex-row flex-align nav-bar">
     <a class="main-option" href="../pages/bio.html">Bio</a>
     <a class="main-option" href="../pages/stats_spells.html"><b>Stats & Spells</b></a>
   </nav>
+
   <!-- STATS -->
+  <!-- Do NOT change the html for your stats -->
   <div class="flex-align flex-col">
     <h1>STATS</h1>
     <div class="stats-grid">
@@ -18,8 +21,13 @@
       <div class="stat-title"><p>Force</p></div>
       <div class="stat-title"><p>Poise</p></div>
       <div class="stat-title"><p>Might</p></div>
-      <div class="stat-title"><p>Charge (Talent)</p></div>
-      <div class="stat-title"><p>RAM (Vessel)</p></div>
+      <div class="stat-title"><p>Talent</p></div>
+      <div class="stat-title"><p>Vessel</p></div>
+
+      <!-- If your stats are affected by something else, add this below the input -->
+      <!-- that's inside of each div with the id "example-stat" and change the id accordingly -->
+      <!-- <p id="will-total" class="total-stat"></p> -->
+
       <div id="will-stat">
         <input type="text" id="will-input">
       </div>
@@ -37,15 +45,14 @@
       </div>
       <div id="charge-stat">
         <input type="text" id="charge-input">
-        <p id="charge-total" class="total-stat"></p>
       </div>
       <div id="ram-stat">
         <input type="text" id="ram-input">
-        <p id="ram-total" class="total-stat"></p>
       </div>
     </div>
   </div>
-  
+
+  <!-- SPELLS INFO -->
   <div class="flex-align flex-col">
     <h1>SPELLS</h1>
     <div class="spell-basic-grid">
@@ -62,89 +69,86 @@
         None
       </div>
     </div>
+
     <!-- ACTUAL SPELLS -->
     <div class="spell-list">
-      <!-- FLASHLIGHT -->
+      <!-- If you want to make your own spells, copy and paste everything from "SPELL 1" -->
+      <!-- and then replace as you wish -->
+
+      <!-- SPELL 1 -->
       <div class="spell-grid">
         <div class="flex-justify flex-align flex-col">
-          <p>Flashlight</p>
-          <img src="../assets/spells/spell1.png" width="200px" height="200px"/>
+          <!-- This is the name of the spell -->
+          <p>Spell 1 name</p> 
+          <!-- Link pointing towards the image you will use -->
+          <img src="../assets/spells/placeholder_spell.png" width="200px" height="200px"/>
         </div>
 
         <div class="spell-info-grid">
           <div class="spell-cast-grid">
-            <div>Battery</div>
-            <div>Ram</div>
-            <div>5</div>
-            <div>1</div>
+            <!-- Spell stats here -->
+            <div>Talent</div>
+            <div>Vessel</div>
+            <div>Talent number</div>
+            <div>Vessel number</div>
           </div>
           <div>
             <p>
-              Deal ¾ of your Charge to any entity within 3 meters. (Rounded up)
+              Spell description here
             </p>
           </div>
-
         </div>
 
         <div class="flex-align flex-justify">
           <button type="button" id="spell1">Cast!</button> 
         </div>
       </div>
-      <!-- BRAIN ROT -->
+
+      <!-- SPELL 2 -->
       <div class="spell-grid">
         <div class="flex-justify flex-align flex-col">
-          <p>Brain Rot</p>
-          <img src="../assets/spells/spell2.png" width="200px" height="200px"/>
+          <p>Spell 2 name</p>
+          <img src="../assets/spells/placeholder_spell.png" width="200px" height="200px"/>
         </div>
 
         <div class="spell-info-grid">
           <div class="spell-cast-grid">
-            <div>Battery</div>
-            <div>Ram</div>
-            <div>15</div>
-            <div>1</div>
+            <div>Talent</div>
+            <div>Vessel</div>
+            <div>Talent number</div>
+            <div>Vessel number</div>
           </div>
           <div>
             <p>
-              Compare the target's will against the casters (Charge + RAM) / 2 .The spell is successful if the target's will is equal or below.
-            </p>
-            <p>
-              On success, the target is afflicted with “rot” for 3 turns. Rot makes the target unable to attack and halves their movement, however they are able to do other actions
-            </p>
-            
+              Spell description here
+            </p>    
           </div>
-
         </div>
 
         <div class="flex-align flex-justify">
           <button type="button" id="spell2">Cast!</button> 
         </div>
       </div>
-      <!-- BATTERY ACID -->
+
+      <!-- SPELL 3 -->
       <div class="spell-grid">
         <div class="flex-justify flex-align flex-col">
-          <p>Battery Acid</p>
-          <img src="../assets/spells/spell3.png" width="200px" height="200px"/>
+          <p>Spell 3 name</p>
+          <img src="../assets/spells/placeholder_spell.png" width="200px" height="200px"/>
         </div>
 
         <div class="spell-info-grid">
           <div class="spell-cast-grid">
-            <div>Battery</div>
-            <div>Ram</div>
-            <div>1</div>
-            <div>1</div>
+            <div>Talent</div>
+            <div>Vessel</div>
+            <div>Talent number</div>
+            <div>Vessel number</div>
           </div>
           <div>
             <p>
-              The caster removes, breaks and throws the battery to any target. 
+              Spell description here
             </p>
-            <p>
-              When it lands, it explodes and it instantly kills any enemy in a 5 meter radius. A fire is left in the area after the explosion. 
-              The caster is left with 0 Battery until they can find a new battery.
-            </p>
-            
           </div>
-
         </div>
 
         <div class="flex-align flex-justify">
@@ -155,6 +159,6 @@
 
   </div>
 
-
 </body>
+<!-- Do NOT change or remove this unless you know what you're doing-->
 <script src="../scripts/stats_spells.js"></script>
